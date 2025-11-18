@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <main class="page">
+      <section class="registration-card">
+        <div class="image-panel">
+          <div class="image-badge">
+            <span class="eyebrow">Comunidad creativa</span>
+            <h2>Únete a nuestra comunidad</h2>
+            <p>Aprende, colabora y crea proyectos increíbles.</p>
+          </div>
+        </div>
+        <div class="form-panel">
+          <div class="form-header">
+            <p class="chip">Nuevo</p>
+            <p class="subtitle">Registro exclusivo para nuevos miembros</p>
+            <h1>Crear cuenta</h1>
+          </div>
+          <form class="signup-form">
+            <label>
+              Nombre completo
+              <input type="text" placeholder="María López" required />
+            </label>
+            <label>
+              Correo electrónico
+              <input type="email" placeholder="maria@email.com" required />
+            </label>
+            <label>
+              Contraseña
+              <input type="password" placeholder="••••••••" required />
+            </label>
+            <label>
+              Repetir contraseña
+              <input type="password" placeholder="••••••••" required />
+            </label>
+            <button type="submit">Registrarse</button>
+          </form>
+          <p class="login-link">
+            ¿Ya tienes una cuenta?
+            <a href="#">Inicia sesión</a>
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
